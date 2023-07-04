@@ -211,3 +211,9 @@ button span{
         display: none;
     }
 }
+@media (max-width:480px){
+    .characters .card-character{
+        width: 100vw;
+        margin: 0 0 3px 0;
+    }
+}
