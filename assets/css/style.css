@@ -190,6 +190,9 @@ button span{
     .card-character .name-character{
         font-size: 20px;
         height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         letter-spacing: 5px;
         padding: 0 5px;
     }
@@ -223,5 +226,26 @@ button span{
     .buttons button img{
         width: 80px;
         object-fit: contain;
+    }
+}
+@media (max-width:425px){
+    .characters .card-character{
+        width: 100vw;
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+    .characters .card-character:hover{
+            background-color: #001219;
+            scale: 1;
+            border: none;
+            border-radius: 0;
+    }
+    .card-character .house-character{
+        width:70%;
+        object-fit: contain;
+        transform: translate(90px, 5px);
+    }
+    .card-character .name-character{
+        padding: 0;
     }
 }
