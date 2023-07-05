@@ -85,7 +85,7 @@ let render = (dataCharacters)=>{
                 <h2 class="name-character">${characters.name}</h2>
                 <p class="name-actor center"><span>${characters?.actor}</span></p>
                 <img src="${iconHouse}" class="house-character" title="${characters?.house}" alt="Icon house ${characters.house}">
-                <span>${characters?.house}</span>
+                <span class="house-name">${characters?.house}</span>
             </div>
             `
     }).join("")

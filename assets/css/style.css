@@ -100,7 +100,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin: 10px; */
     overflow: hidden;
     color: aliceblue;
     cursor: pointer;
@@ -119,6 +118,7 @@ body{
 }
 .card-character .name-character{
     margin-top:10px;
+    text-align: center;
 }
 .card-character .house-character{
     width: 45px;
@@ -155,18 +155,6 @@ body{
 .buttons button:focus{
     border-left: 5px solid #fff;
     border-right: 5px solid #fff;
-    animation: border-btn 5s ease-in-out infinite;
-}
-@keyframes border-btn {
-    0%, 100%{
-        border-left: 5px solid #fff;
-        border-right: 5px solid #fff;
-    }
-    50%{
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-    }
-    
 }
 .buttons button img{
     object-fit: cover;
@@ -194,17 +182,46 @@ button span{
     .home h1{
         font-size: 60px;
     }
+    .characters .card-character{
+        width: 200px;
+        margin:1px;
+        z-index: -2;
+    }
+    .card-character .name-character{
+        font-size: 20px;
+        height: 60px;
+        letter-spacing: 5px;
+        padding: 0 5px;
+    }
+    .card-character .house-name{
+        display: none;
+    }
+    .card-character .character-img{
+        height: 170px;
+        width: 130px;
+    }
+    .card-character .house-character{
+        width: 200px;
+        position: absolute;
+        transform: translateY(85px);
+        z-index: -1;
+        animation: house-img 15s ease-in-out infinite;
+    }
+    @keyframes house-img {
+        0%, 100%{
+            scale: 1;
+            opacity: 0.7;
+        }
+        50%{
+            scale: 0.95;
+            opacity: 0;
+        }
+    }
     .buttons button span{
         display: none;
     }
     .buttons button img{
         width: 80px;
         object-fit: contain;
-    }
-}
-@media (max-width:480px){
-    .characters .card-character{
-        width: 100vw;
-        margin: 0 0 3px 0;
     }
 }
