@@ -37,11 +37,12 @@ function btnRenderHouse(){
     }
     btn.style.backgroundColor = bgCard
     btn.addEventListener('click', ()=>{
+        
         card.forEach((cardList)=>{
         const house =cardList.classList.contains(btn.name)
            if(house === true){
-            console.log("oi")
             cardList.style.display = 'flex'
+            cardList.classList.add('enter-card')
            }else{
             cardList.style.display = 'none'
            }

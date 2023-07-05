@@ -149,17 +149,42 @@ body{
     margin: 5px;
     border: none;
     color: #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 }
-.buttons button:hover{
-    background-color: #1b263b;
+.buttons button:focus{
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    animation: border-btn 5s ease-in-out infinite;
 }
-
+@keyframes border-btn {
+    0%, 100%{
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+    }
+    50%{
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    
+}
 .buttons button img{
     object-fit: cover;
     height: 200px;
 }
 button span{
     font-size: 35px;
+}
+.enter-card{
+    animation: enter 3s ease-in-out;
+}
+@keyframes enter {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 @media (max-width:600px){
     .buttons button span{
