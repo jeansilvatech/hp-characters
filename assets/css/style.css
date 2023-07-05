@@ -187,8 +187,16 @@ button span{
     }
 }
 @media (max-width:600px){
+    .bg{
+        width: 100vw;
+        height: 100vh;
+    }
     .buttons button span{
         display: none;
+    }
+    .buttons button img{
+        width: 80px;
+        object-fit: contain;
     }
 }
 @media (max-width:480px){
