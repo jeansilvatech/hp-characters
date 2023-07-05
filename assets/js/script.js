@@ -5,6 +5,12 @@ const btnHouse = document.querySelectorAll('.buttons button')
 let bgCard = ""
 let iconHouse = ""
 let data = [];
+const colors = {
+    Gryffindor: "#740001",
+    Slytherin: "#1a472a",
+    Hufflepuff: "#8E6F22",
+    Ravenclaw: "#0B607E"
+}
 async function api(){
     try{
     const res = await fetch("https://hp-api.onrender.com/api/characters")
@@ -19,16 +25,16 @@ function btnRenderHouse(){
     btnHouse.forEach((btn)=>{
     switch(btn.name){
         case "Gryffindor":
-            bgCard = "#B22222"
+            bgCard = colors.Gryffindor;
         break;
         case "Slytherin":
-            bgCard = "#228B22"
+            bgCard = colors.Slytherin
         break;
         case "Hufflepuff":
-            bgCard = "#B8860B"
+            bgCard = colors.Hufflepuff
         break;
         case "Ravenclaw":
-            bgCard = "#1E90FF"
+            bgCard = colors.Ravenclaw
         break;
         default:
             bgCard = "#1C1C1C"
@@ -60,19 +66,19 @@ let render = (dataCharacters)=>{
             switch(characters.house){
                 case "Gryffindor":
                     iconHouse ="../assets/img/Gryffindor.webp"
-                    bgCard = "#B22222"
+                    bgCard = colors.Gryffindor
                 break;
                 case "Slytherin":
                     iconHouse ="../assets/img/Slytherin.webp"
-                    bgCard = "#228B22"
+                    bgCard = colors.Slytherin
                 break;
                 case "Hufflepuff":
                     iconHouse ="../assets/img/Hufflepuff.webp"
-                    bgCard = "#B8860B"
+                    bgCard = colors.Hufflepuff
                 break;
                 case "Ravenclaw":
                     iconHouse ="../assets/img/Ravenclaw.webp"
-                    bgCard = "#1E90FF"
+                    bgCard = colors.Ravenclaw
                 break;
                 default:
                     iconHouse ="../assets/img/default.webp"
