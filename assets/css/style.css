@@ -263,6 +263,8 @@ button span{
         height: 350px;
         padding-left: 30px;
         align-items: flex-start;
+        border: none;
+        transition: 500ms;
     }
     .characters .card-character:hover{
             background-color: #001219;
