@@ -2,6 +2,9 @@ const content = document.querySelector('.content')
 const loading = document.querySelector('.loading')
 const contentCards = document.querySelector('.content .characters')
 const btnHouse = document.querySelectorAll('.buttons button')
+const arrow = document.querySelector('.arrow')
+const title = document.querySelector('main h1')
+const home = document.querySelector('main')
 let bgCard = ""
 let iconHouse = ""
 let data = [];
@@ -11,6 +14,11 @@ const colors = {
     Hufflepuff: "#8E6F22",
     Ravenclaw: "#0B607E"
 }
+window.addEventListener('scroll', ()=>{
+    arrow.classList.toggle('rotate-arrow', window.scrollY >0)
+    title.classList.toggle('scroll-title', window.scrollY >0)
+    home.classList.toggle('scroll-home', window.scrollY >0)
+})
 async function api(){
     try{
     const res = await fetch("https://hp-api.onrender.com/api/characters")
@@ -19,7 +27,7 @@ async function api(){
     }catch(err){
         console.log(err)
     }
-}
+}    
 function btnRenderHouse(){
     const card = document.querySelectorAll('.card-character')
     btnHouse.forEach((btn)=>{
