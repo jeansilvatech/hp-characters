@@ -63,6 +63,14 @@ function btnRenderHouse(){
            
         })
     })
+    btn.addEventListener('mouseover', ()=>{
+        btn.style.opacity = 0.7;
+        btn.style.scale = 0.99;
+    })
+    btn.addEventListener('mouseout', ()=>{
+        btn.style.opacity = 1;
+        btn.style.scale = 1;
+    })
 })
 }
 
