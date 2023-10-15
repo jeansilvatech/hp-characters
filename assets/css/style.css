@@ -25,18 +25,22 @@ body{
     background-color: #001219;
                                                 
 }
-#bgVideo{
-    position: fixed;
-    inset: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#bg-video{
+    position: fixed;
+    inset: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home{
     width: 100%;
     height: 100vh;
@@ -235,6 +239,9 @@ button span{
     .bg{
         width: 100vw;
         height: 100vh;
+    }
+    #bg-video{
+        transform: translateX(-50%);
     }
     .home h1{
         font-size: 60px;
