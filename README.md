@@ -16,7 +16,8 @@ Aplicação web que lista os personagens de Harry Potter, consumindo HP API.
   ![image](https://github.com/jeansilvatech/hp-characters/assets/23384348/3edcdd38-4621-42c4-a8d3-579de9ae4f9c)
 
 * #### Adição de BG Video
- ![image](https://github.com/jeansilvatech/hp-characters/assets/23384348/824a1bfa-3d5a-4574-b451-9b8a4596bf4d)
+  ![image](https://github.com/jeansilvatech/hp-characters/assets/23384348/0222d190-5b84-4460-96cb-68e817594a0b)
+
 
 
 
