@@ -65,7 +65,7 @@ body{
     z-index: -1;
 }
 .home h1{
-    font-size: 70px;
+    font-size: 100px;
     user-select: none;
     color: #001219;
     transition: 1s;
