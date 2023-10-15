@@ -3,6 +3,7 @@ const loading = document.querySelector('.loading')
 const contentCards = document.querySelector('.content .characters')
 const btnHouse = document.querySelectorAll('.buttons button')
 const arrow = document.querySelector('.arrow')
+const arrowIcon = document.querySelector('.arrow i')
 const title = document.querySelector('main h1')
 const home = document.querySelector('main')
 let bgCard = ""
@@ -16,6 +17,7 @@ const colors = {
 }
 window.addEventListener('scroll', ()=>{
     arrow.classList.toggle('rotate-arrow', window.scrollY >0)
+    arrowIcon.classList.toggle('color-arrow', window.scrollY >0)
     title.classList.toggle('scroll-title', window.scrollY >0)
     home.classList.toggle('scroll-home', window.scrollY >0)
 })
