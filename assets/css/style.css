@@ -100,6 +100,11 @@ body{
     width: 30px;
     object-fit: contain;
 }
+.arrow{
+    height: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
 .arrow i{
     font-size: 35px;
     color: #001219;
@@ -140,6 +145,7 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .characters .card-character{
     width: 250px;
     height: 400px;
