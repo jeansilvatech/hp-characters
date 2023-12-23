@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     scrollbar-width: thin;
     scroll-behavior: smooth;
     scrollbar-color: #fff #001219;
@@ -23,6 +22,7 @@ body{
     width: 100vw;
     color: #fff;
     background-color: #001219;
+    overflow-x: hidden;
                                                 
 }
 .center{
@@ -78,7 +78,8 @@ body{
     position: absolute;
     width: 50px;
     height: 50px;
-    bottom: 0;
+    bottom: 5px;
+    overflow: hidden;
     transition: 500ms;
 }
 .home .credits{
@@ -100,13 +101,9 @@ body{
     width: 30px;
     object-fit: contain;
 }
-.arrow{
-    height: 50px;
-    padding: 5px;
-    overflow: hidden;
-}
 .arrow i{
     font-size: 35px;
+    padding: 5px;
     color: #001219;
     animation: arrow 3s ease-in-out infinite;
 }
