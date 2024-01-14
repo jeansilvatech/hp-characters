@@ -107,7 +107,8 @@ let render = (dataCharacters)=>{
             <div class="card-character ${characters?.house}" style="background-color:${bgCard} ;">
                 <img src="${characters.image ===""?imgDefault:characters.image}" alt="" class="character-img">
                 <h2 class="name-character">${characters.name}</h2>
-                <p class="name-actor center"><span>${characters?.actor}</span></p>
+                <div class="line-separator-card"></div>
+                <p class="name-actor center"><span> ${characters?.actor}</span></p>
                 <img src="${iconHouse}" class="house-character" title="${characters?.house}" alt="Icon house ${characters.house}">
                 <span class="house-name">${characters?.house}</span>
             </div>

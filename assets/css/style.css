@@ -158,6 +158,13 @@ body{
     cursor: pointer;
     transition: 500ms;
 }
+.card-character .line-separator-card{
+    width: 100px;
+    height: 2px;
+    margin: 5px 0 5px 0;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
 .card-character .character-img{
     height: 200px;
     width: 140px;
@@ -251,12 +258,12 @@ button span{
     }
     .characters .card-character{
         width: 200px;
-        margin:1px;
+        margin:5px;
         z-index: -2;
     }
     .card-character .name-character{
         font-size: 20px;
-        height: 60px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -301,11 +308,10 @@ button span{
 }
 @media (max-width:425px){
     .characters .card-character{
-        width: 100vw;
+        width: 95%;
         height: 350px;
         padding-left: 30px;
         align-items: flex-start;
-        border: none;
         transition: 500ms;
     }
     .characters .card-character:hover{
@@ -317,7 +323,7 @@ button span{
     .card-character .house-character{
         width:60%;
         object-fit: contain;
-        transform: translate(125px, 5px);
+        transform: translate(100px, 5px);
     }
     .card-character .name-character{
         padding: 0;
